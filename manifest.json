@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "History Backup with Thumbnails",
+  "version": "1.0",
+  "description": "Exports browser history as an HTML file with thumbnails.",
+  "permissions": [
+      "history", "downloads", "tabs", "activeTab", "scripting"
+  ],
+  "action": {
+    "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+          },
+    "default_popup": "popup.html",
+    "default_title": "Export History with Thumbnails"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
